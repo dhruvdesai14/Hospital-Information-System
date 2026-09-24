@@ -102,7 +102,7 @@ VALUES
 INSERT INTO Patient (FirstName, LastName, DateOfBirth, Gender, ContactNumber, Address, EmergencyContact, MedicalHistory)
 VALUES
 ('Dhruv', 'Desai', '1990-05-20', 'Male', '9876543210', '123 Elm Street', '1122334455', 'Diabetes'),
-('Jay', 'Kathwadia', '1999-05-20', 'Male', '9876543210', '123 York Mills', '1122334455', 'Migraine');
+('Jay', 'Kathwadia', '1999-05-20', 'Male', '9876543211', '123 York Mills', '1122334455', 'Migraine');
 
 
 -- Insert into Supplier
@@ -121,7 +121,7 @@ VALUES
 INSERT INTO Appointment (PatientID, EmployeeID, AppointmentDate, Reason, Status)
 VALUES
 (1, 1, '2024-11-25 09:00:00', 'Routine Checkup', 'Scheduled'),
-(2, 1, '2024-11-27 11:00:00', 'Diabetes Management', 'Scheduled');
+(2, 1, '2024-11-27 11:00:00', 'Migraine Follow-up', 'Scheduled');
 
 -- Insert into Prescription
 INSERT INTO Prescription (PatientID, EmployeeID, DateIssued)
@@ -134,5 +134,5 @@ INSERT INTO PrescriptionDetails (PrescriptionID, Medication, Dosage, Instruction
 VALUES
 (1,'Lisinopril', '10mg', 'Take once a day'),
 (1,'Metformin', '500mg', 'Take twice a day with food'),
-(2,'Advill', '500mg', 'Take twice a day'),
+(2,'Advil', '500mg', 'Take twice a day'),
 (2,'Tylenol', '100mg', 'Take once a day');
